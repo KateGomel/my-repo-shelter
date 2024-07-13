@@ -31,3 +31,27 @@ body {
 .header__item-active a {
   cursor: default;
 }
+
+.btn-primary {
+  padding: 15px 45px;
+  border-radius: 100px;
+  background-color: var(--primary);
+  color: var(--dark-3xl);
+  transition: 1s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary {
+  padding: 15px 45px;
+  border-radius: 100px;
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  color: var(--dark-3xl);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-light);
+}

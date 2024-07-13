@@ -6,6 +6,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   background: url("./assets/images/pattern.png"),
     radial-gradient(
       100% 215.42% at 0% 0%,
@@ -65,4 +66,32 @@
 
 .header__item-active {
   color: var(--light-s);
+}
+
+.not-only {
+  display: flex;
+  width: 100%;
+  background: transparent;
+}
+
+.not-only__content {
+  background-image: url("./assets/images/start-screen-puppy.png");
+  background-repeat: no-repeat;
+  background-position: 93% 100%;
+  padding-top: 224px;
+  padding-bottom: 255px;
+}
+
+.not-only__title {
+  max-width: 310px;
+  width: 100%;
+  color: var(--light-xl);
+  padding-bottom: 41px;
+}
+
+.not-only__text {
+  max-width: 460px;
+  width: 100%;
+  color: var(--dark-s);
+  padding-bottom: 56px;
 }
