@@ -40,7 +40,8 @@ a {
 
 img,
 ul,
-li {
+li,
+button {
   display: block;
   max-width: 100%;
 }

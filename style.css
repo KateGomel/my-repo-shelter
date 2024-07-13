@@ -66,3 +66,28 @@
 .header__item-active {
   color: var(--light-s);
 }
+
+.not-only {
+  display: flex;
+  width: 100%;
+  background: transparent;
+}
+
+.not-only__content {
+  padding-top: 224px;
+  padding-bottom: 234px;
+}
+
+.not-only__title {
+  max-width: 310px;
+  width: 100%;
+  color: var(--light-xl);
+  padding-bottom: 41px;
+}
+
+.not-only__text {
+  max-width: 460px;
+  width: 100%;
+  color: var(--dark-s);
+  padding-bottom: 56px;
+}

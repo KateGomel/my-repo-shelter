@@ -74,3 +74,10 @@
   font-family: var(--second-family);
   font-size: 32px;
 }
+
+.btn-text {
+  font-family: var(--font-family);
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
