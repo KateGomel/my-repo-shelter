@@ -1,0 +1,16 @@
+:root {
+  --light-xl: #ffffff;
+  --light-l: #f6f6f6;
+  --light-s: #fafafa;
+  --dark-s: #cdcdcd;
+  --dark-m: #b2b2b2;
+  --dark-l: #545454;
+  --dark-xl: #4c4c4c;
+  --dark-2xl: #444444;
+  --dark-3xl: #292929;
+  --primary: #f1cdb3;
+  --primary-light: #fddcc4;
+  --start-gradient: #5b483a;
+  --finish-gradient: #262425;
+  --gradient: #211f20;
+}

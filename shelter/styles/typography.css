@@ -1,0 +1,76 @@
+:root {
+  --font-family: "Georgia", sans-serif;
+  --second-family: "Arial", sans-serif;
+}
+
+@import url("./fonts.css");
+
+.title {
+  font-family: var(--font-family);
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.subtitle {
+  font-family: var(--second-family);
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+}
+
+.h2 {
+  font-family: var(--font-family);
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.h3 {
+  font-family: var(--font-family);
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.h3-mobile {
+  font-family: var(--font-family);
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.h4 {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.h5 {
+  font-family: var(--font-family);
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.h5-bolt {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.p-l {
+  font-family: var(--second-family);
+}
+
+.p-s {
+  font-family: var(--second-family);
+  font-style: italic;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.mobile-menu {
+  font-family: var(--second-family);
+  font-size: 32px;
+}
