@@ -6,6 +6,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   background: url("./assets/images/pattern.png"),
     radial-gradient(
       100% 215.42% at 0% 0%,
@@ -74,8 +75,11 @@
 }
 
 .not-only__content {
+  background-image: url("./assets/images/start-screen-puppy.png");
+  background-repeat: no-repeat;
+  background-position: 93% 100%;
   padding-top: 224px;
-  padding-bottom: 234px;
+  padding-bottom: 255px;
 }
 
 .not-only__title {
