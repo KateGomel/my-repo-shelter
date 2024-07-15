@@ -11,6 +11,7 @@
 
 <body>
   <div class="wrapper">
+    <!-- Header -->
     <header class="header">
       <div class="header__content container">
         <div class="header__logo">
@@ -30,7 +31,9 @@
         </nav>
       </div>
     </header>
+    <!-- Main -->
     <main class="main">
+      <!-- Not-only -->
       <section id="not-only" class="not-only">
         <div class="not-only__inner container">
           <h2 class="not-only__title h2">Not only people need a house</h2>
@@ -39,9 +42,9 @@
           <a href="#pets" class="not-only__btn btn-primary btn-text">Make a friend</a>
         </div>
       </section>
+      <!-- About -->
       <section id="about" class="about">
         <div class="about__inner container">
-          <img src="./assets/images/about-pets.png" alt="cat&dog" class="about__img">
           <div class="about__content">
             <h3 class="about__title h3">About the shelter “Cozy House”</h3>
             <p class="about__text p-l">Currently we have 121 dogs and 342 cats on our hands and statistics show that
@@ -58,7 +61,36 @@
           </div>
         </div>
       </section>
-      <section id="pets" class="pets"></section>
+      <!-- Pets -->
+      <section id="pets" class="pets">
+        <div class="pets__inner container">
+          <h3 class="pets-title h3">Our friends who <br> are looking for a house</h3>
+          <div class="pets__slider slider">
+            <ul class="pets__slider-list">
+              <li class="pets__slider-item item1">
+                <img src="./assets/images/pets-katrine.png" alt="cat-katrine">
+                <h4 class="pets__item-title h4 ">Katrine</h4>
+                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+              </li>
+              <li class="pets__slider-item item2">
+                <img src="./assets/images/pets-jennifer.png" alt="dog-jennifer">
+                <h4 class="pets__item-title h4">Jennifer</h4>
+                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+              </li>
+              <li class="pets__slider-item item3">
+                <img src="./assets/images/pets-woody.png" alt="dog-woody">
+                <h4 class="pets__item-title h4">Woody</h4>
+                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+              </li>
+            </ul>
+            <div>
+              <button class="pets__slider-btn btn-prev"></button>
+              <button class="pets__slider-btn btn-next"></button>
+            </div>
+          </div>
+          <a href="./pages/pets.html" class="pets__btn btn-primary btn-text">Get to know the rest</a>
+        </div>
+      </section>
       <section id="help" class="help"></section>
       <section id="donation" class="donation container"></section>
     </main>

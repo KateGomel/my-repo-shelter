@@ -52,7 +52,3 @@ body {
   background-color: transparent;
   color: var(--dark-3xl);
 }
-
-.btn-secondary:hover {
-  background-color: var(--primary-light);
-}
