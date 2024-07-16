@@ -23,7 +23,7 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__list-item p-l header__item-active"><a href="#about">About the shelter</a></li>
-            <li class="header__list-item p-l"><a href="#pets">Our pets</a></li>
+            <li class="header__list-item p-l"><a href="./pages/pets.html">Our pets</a></li>
             <li class="header__list-item p-l"><a href="#help">Help the shelter</a></li>
             <li class="header__list-item p-l"><a href="#contacts">Contacts</a></li>
           </ul>
@@ -140,7 +140,7 @@
           <div class="donation__content">
             <h3 class="donation__title h3">You can also make a donation</h3>
             <h5 class="donation__bank h5">Name of the bank / Type of bank account</h5>
-            <h4 class="donation__card h4">8380 2880 8028 8791 7435</h4>
+            <a href="#no_scroll" class="donation__card h4">8380 2880 8028 8791 7435</a>
             <p class="donation__text p-s">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
               Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -148,9 +148,41 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-inner container">
-        <div id="contacts" class="footen-contacts"></div>
+      <div class="footer__inner container">
+        <div id="contacts" class="footer__content">
+          <div class="footer__contacts">
+            <h3 class="footer__title-contacts h3">
+              For questions and suggestions
+            </h3>
+            <a href="mailto:email@shelter.com" class="footer__email h4">
+              <span>
+                email@shelter.com
+              </span>
+            </a>
+            <a href="tel:+136745677554" class="footer__phone h4">
+              <span>
+                +13 674 567 75 54
+              </span>
+            </a>
+          </div>
+          <div class="footer__location">
+            <h3 class="footer__title-location h3">
+              We are waiting for your visit
+            </h3>
+            <a href="https://maps.app.goo.gl/sWkBt9H88Xcw9Chc9" target="_blank" class="footer__boston h4">
+              <span>
+                1 Central Street, Boston (entrance from the store)
+              </span>
+            </a>
+            <a href="https://maps.app.goo.gl/QVXctT4dXUybfLHD7" target="_blank" class="footer__london h4">
+              <span>
+                18 South Park, London
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
