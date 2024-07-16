@@ -9,6 +9,19 @@ body {
   border: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url("./assets/images/pattern.png"),
+    radial-gradient(
+      100% 215.42% at 0% 0%,
+      var(--start-gradient) 0%,
+      var(--finish-gradient) 100%
+    ),
+    var(--gradient);
+  height: 100%;
+}
+
 .container {
   max-width: 1280px;
   width: 100%;

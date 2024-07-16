@@ -2,3 +2,173 @@
 @import url("../styles/global.css");
 @import url("../styles/colors.css");
 @import url("../styles/typography.css");
+
+/* Header */
+
+.header {
+  display: flex;
+  width: 100%;
+  /* background: var(--light-xl); */
+  padding: 31px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
+}
+
+.header__title {
+  /* color: var(--primary); */
+  margin-bottom: 11px;
+}
+
+.header__subtitle {
+  /* color: var(--light-xl); */
+  padding-left: 4px;
+}
+
+.header__list {
+  display: flex;
+  gap: 35px;
+}
+
+.header__list-item {
+  /* color: var(--dark-s); */
+  padding-top: 16px;
+  transition: 1s;
+}
+
+/* .header__list-item:hover {
+  color: var(--light-s);
+}
+
+.header__item-active {
+  color: var(--light-s);
+} */
+
+/* Pets */
+
+/* Footer */
+
+.footer {
+  background: transparent;
+  width: 100%;
+}
+
+.footer__content {
+  display: flex;
+  gap: 160px;
+  padding-top: 57px;
+  padding-bottom: 20px;
+  color: var(--primary);
+}
+
+.footer__inner {
+  padding-bottom: 45px;
+  background-image: url("../assets/images/footer-puppy.png");
+  background-repeat: no-repeat;
+  background-position: 96% 100%;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  max-width: 281px;
+}
+
+.footer__title-contacts {
+  color: var(--light-xl);
+  padding-bottom: 43px;
+}
+
+.footer__email {
+  padding-bottom: 49px;
+  padding-left: 59px;
+  position: relative;
+  transition: 1s;
+}
+
+.footer__email:before {
+  content: url("../assets/icons/icon-email.svg");
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.footer__email:hover {
+  transform: scale(1.1);
+}
+
+.footer__phone {
+  padding-left: 60px;
+  position: relative;
+  transition: 1s;
+}
+
+.footer__phone:before {
+  content: url("../assets/icons/icon-phone.svg");
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.footer__phone:hover {
+  transform: scale(1.1);
+}
+
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  max-width: 302px;
+}
+
+.footer__title-location {
+  color: var(--light-xl);
+  padding-bottom: 31px;
+}
+
+.footer__boston {
+  padding-bottom: 37px;
+  padding-left: 39px;
+  position: relative;
+  transition: 1s;
+}
+
+.footer__boston:before {
+  content: url("../assets/icons/icon-marker.svg");
+  position: absolute;
+  left: -3px;
+  top: 6px;
+}
+
+.footer__boston:hover {
+  transform: scale(1.1);
+}
+
+.footer__london {
+  padding-left: 39px;
+  position: relative;
+  transition: 1s;
+}
+
+.footer__london:before {
+  content: url("../assets/icons/icon-marker.svg");
+  position: absolute;
+  left: -2px;
+  top: -5px;
+}
+
+.footer__london:hover {
+  transform: scale(1.1);
+}
