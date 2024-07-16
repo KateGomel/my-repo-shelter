@@ -212,6 +212,7 @@
 
 .help__title {
   max-width: 310px;
+  color: var(--dark-l);
   text-align: center;
   padding-bottom: 58px;
 }
@@ -232,6 +233,60 @@
 
 .help__item-img {
   padding-bottom: 32px;
+}
+
+.help__item-title {
+  color: var(--dark-l);
+}
+
+/* Donation */
+
+.donation {
+  width: 100%;
+  background-color: var(--light-l);
+  color: var(--dark-l);
+}
+
+.donation__inner {
+  padding-left: 718px;
+  background-image: url("./assets/images/donation-dog.png");
+  background-repeat: no-repeat;
+  background-position: 24% 45%;
+}
+
+.donation__content {
+  max-width: 380px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.donation__title {
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+
+.donation__bank {
+  padding-bottom: 20px;
+}
+
+.donation__card {
+  display: inline-block;
+  padding: 10px 15px 10px 60px;
+  border-radius: 9px;
+  background: var(--primary);
+  position: relative;
+}
+
+.donation__card::before {
+  content: url("./assets/icons/credit-card.svg");
+  position: absolute;
+  left: 14px;
+}
+
+.donation__text {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: var(--dark-m);
 }
 
 /* Footer */
