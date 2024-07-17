@@ -25,7 +25,7 @@
 }
 
 .header__logo:hover {
-  transform: scale(1.1);
+  text-shadow: 1px 1px 18px rgba(253, 220, 196, 1);
 }
 
 .header__title {
@@ -138,7 +138,7 @@
   max-width: 1200px;
 }
 
-.pets-title {
+.pets__title {
   max-width: 400px;
   text-align: center;
   color: var(--dark-l);
@@ -169,6 +169,7 @@
 .pets__slider-btn {
   width: 52px;
   height: 52px;
+  color: var(--dark-3xl);
   background-color: transparent;
   border: 2px solid var(--primary);
   border-radius: 50%;
@@ -325,7 +326,7 @@
 }
 
 .footer__email:hover {
-  transform: scale(1.1);
+  text-shadow: 1px 1px 12px rgba(253, 220, 196, 0.6);
 }
 
 .footer__phone {
@@ -342,7 +343,7 @@
 }
 
 .footer__phone:hover {
-  transform: scale(1.1);
+  text-shadow: 1px 1px 12px rgba(253, 220, 196, 0.6);
 }
 
 .footer__location {
@@ -371,7 +372,7 @@
 }
 
 .footer__boston:hover {
-  transform: scale(1.1);
+  text-shadow: 1px 1px 12px rgba(253, 220, 196, 0.6);
 }
 
 .footer__london {
@@ -388,5 +389,5 @@
 }
 
 .footer__london:hover {
-  transform: scale(1.1);
+  text-shadow: 1px 1px 12px rgba(253, 220, 196, 0.6);
 }
