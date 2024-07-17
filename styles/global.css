@@ -12,7 +12,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  background: url("./assets/images/pattern.png"),
+  background: url("../assets/images/pattern.png"),
     radial-gradient(
       100% 215.42% at 0% 0%,
       var(--start-gradient) 0%,
