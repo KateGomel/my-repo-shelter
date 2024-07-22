@@ -25,7 +25,7 @@
 }
 
 .header__logo:hover {
-  text-shadow: 1px 1px 18px rgba(68, 68, 68, 1);
+  text-shadow: 1px 1px 4px rgba(68, 68, 68, 1);
 }
 
 .header__title {
@@ -133,11 +133,6 @@
   background: var(--primary);
   border-radius: 50%;
   transition: 1s;
-}
-
-.pets__current-page:hover {
-  background: var(--primary-light);
-  box-shadow: 0px 1px 10px rgba(178, 178, 178, 1);
 }
 
 /* Footer */

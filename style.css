@@ -25,7 +25,7 @@
 }
 
 .header__logo:hover {
-  text-shadow: 1px 1px 18px rgba(253, 220, 196, 1);
+  text-shadow: 1px 1px 4px rgba(253, 220, 196, 1);
 }
 
 .header__title {
@@ -135,7 +135,6 @@
   align-items: center;
   width: 100%;
   position: relative;
-  max-width: 1200px;
 }
 
 .pets__title {
@@ -161,6 +160,7 @@
 .pets__pagination {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
   position: absolute;
   top: 49%;
