@@ -212,3 +212,40 @@
     padding-bottom: 28px;
   }
 }
+
+@media screen and (max-width: 949px) {
+  .header__list-item {
+    letter-spacing: 0.005em;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .pets__inner {
+    padding-top: 41px;
+  }
+  .pets__title {
+    font-size: 30px;
+    padding-bottom: 42px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .item4,
+  .item5,
+  .item6 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pets__inner {
+    padding-bottom: 0;
+  }
+  .pets__title {
+    font-size: 25px;
+  }
+  .pets__pagination {
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+}

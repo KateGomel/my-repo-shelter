@@ -101,6 +101,12 @@
   transform: translateY(10px);
 }
 
+@media screen and (max-width: 949px) {
+  .header__list-item {
+    letter-spacing: 0.005em;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__list {
     display: none;
