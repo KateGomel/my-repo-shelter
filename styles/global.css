@@ -98,7 +98,7 @@ body {
 .pets__slider-item {
   display: block;
   text-align: center;
-  width: 270px;
+  min-width: 270px;
   height: 435px;
   background-color: var(--light-s);
   border-radius: 9px;

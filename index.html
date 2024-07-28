@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Cozy House</title>
 </head>
 
@@ -68,28 +68,30 @@
       <section id="pets" class="pets">
         <div class="pets__inner container">
           <h3 class="pets__title h3">Our friends who <br> are looking for a house</h3>
-          <div class="pets__slider slider">
-            <ul class="pets__slider-list">
-              <li class="pets__slider-item item1">
-                <img src="./assets/images/pets-katrine.png" alt="cat-katrine">
-                <h4 class="pets__item-title h4 ">Katrine</h4>
-                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-              </li>
-              <li class="pets__slider-item item2">
-                <img src="./assets/images/pets-jennifer.png" alt="dog-jennifer">
-                <h4 class="pets__item-title h4">Jennifer</h4>
-                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-              </li>
-              <li class="pets__slider-item item3">
-                <img src="./assets/images/pets-woody.png" alt="dog-woody">
-                <h4 class="pets__item-title h4">Woody</h4>
-                <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-              </li>
-            </ul>
-          </div>
-          <div class="pets__pagination">
-            <button class="pets__slider-btn btn-prev">&larr;</button>
-            <button class="pets__slider-btn btn-next">&rarr;</button>
+          <div class="pets__slider-wrapper">
+            <div class="pets__slider">
+              <ul class="pets__slider-list">
+                <li class="pets__slider-item item1">
+                  <img src="./assets/images/pets-katrine.png" alt="cat-katrine">
+                  <h4 class="pets__item-title h4 ">Katrine</h4>
+                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+                </li>
+                <li class="pets__slider-item item2">
+                  <img src="./assets/images/pets-jennifer.png" alt="dog-jennifer">
+                  <h4 class="pets__item-title h4">Jennifer</h4>
+                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+                </li>
+                <li class="pets__slider-item item3">
+                  <img src="./assets/images/pets-woody.png" alt="dog-woody">
+                  <h4 class="pets__item-title h4">Woody</h4>
+                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
+                </li>
+              </ul>
+            </div>
+            <div class="pets__pagination">
+              <button class="pets__slider-btn btn-prev">&larr;</button>
+              <button class="pets__slider-btn btn-next">&rarr;</button>
+            </div>
           </div>
           <a href="./pages/pets.html" class="pets__btn btn-primary btn-text">Get to know the rest</a>
         </div>
@@ -190,7 +192,7 @@
       </div>
     </footer>
   </div>
-  <script type="module" src="./script.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>
