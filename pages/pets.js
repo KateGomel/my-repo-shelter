@@ -1,5 +1,8 @@
 import { dataCards } from "../scripts/arrCard.js";
+import { LINKS_IMG } from "../scripts/constants.js";
 
-console.log(dataCards);
+const overlay = document.querySelector(".burger-menu");
 
-console.log("Cozy House Pets");
+console.log(overlay, LINKS_IMG.main, LINKS_IMG.pets);
+
+// overlay.innerHTML = "";
