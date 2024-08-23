@@ -2,6 +2,8 @@ const dataCards = [
   {
     name: "Jennifer",
     img: "pets-jennifer.png",
+    imgMod: "jennifer.png",
+    alt: "jennifer",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -14,6 +16,8 @@ const dataCards = [
   {
     name: "Sophia",
     img: "pets-sophia.png",
+    imgMod: "sophia.png",
+    alt: "sophia",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -26,6 +30,8 @@ const dataCards = [
   {
     name: "Woody",
     img: "pets-woody.png",
+    imgMod: "woody.png",
+    alt: "woody",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -38,6 +44,8 @@ const dataCards = [
   {
     name: "Scarlett",
     img: "pets-scarlet.png",
+    imgMod: "scarlet.png",
+    alt: "scarlet",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -50,6 +58,8 @@ const dataCards = [
   {
     name: "Katrine",
     img: "pets-katrine.png",
+    imgMod: "katrine.png",
+    alt: "katrine",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -62,6 +72,8 @@ const dataCards = [
   {
     name: "Timmy",
     img: "pets-timmy.png",
+    imgMod: "timmy.png",
+    alt: "timmy",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -74,6 +86,8 @@ const dataCards = [
   {
     name: "Freddie",
     img: "pets-freddie.png",
+    imgMod: "freddie.png",
+    alt: "freddie",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -86,6 +100,8 @@ const dataCards = [
   {
     name: "Charly",
     img: "pets-charly.png",
+    imgMod: "charly.png",
+    alt: "charly",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:

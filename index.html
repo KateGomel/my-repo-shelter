@@ -10,20 +10,7 @@
 </head>
 
 <body>
-  <!-- Burger-menu -->
-  <div class="burger-menu">
-    <div class="burger-menu__overlay">
-      <div class="burger-menu__content">
-        <ul class="burger-menu__list">
-          <li class="burger-menu__list-item p-l burger-menu__item-active"><a href="#no_scroll">About the shelter</a>
-          </li>
-          <li class="burger-menu__list-item p-l"><a href="./pages/pets.html">Our pets</a></li>
-          <li class="burger-menu__list-item p-l"><a href="#help">Help the shelter</a></li>
-          <li class="burger-menu__list-item p-l"><a href="#contacts">Contacts</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
   <div class="wrapper">
     <!-- Header -->
     <header class="header">
@@ -47,6 +34,19 @@
           <span></span>
           <span></span>
         </button>
+      </div>
+      <!-- Burger-menu -->
+      <div class="burger-menu">
+        <div class="burger-menu__content">
+          <ul class="burger-menu__list">
+            <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll">About the
+                shelter</a>
+            </li>
+            <li class="burger-menu__list-item mobile-menu"><a href="./pages/pets.html">Our pets</a></li>
+            <li class="burger-menu__list-item mobile-menu"><a href="#help">Help the shelter</a></li>
+            <li class="burger-menu__list-item mobile-menu"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -84,27 +84,11 @@
           <h3 class="pets__title h3">Our friends who <br> are looking for a house</h3>
           <div class="pets__slider-wrapper">
             <div class="pets__slider">
-              <ul class="pets__slider-list">
-                <li class="pets__slider-item item1">
-                  <img src="./assets/images/pets-katrine.png" alt="cat-katrine">
-                  <h4 class="pets__item-title h4 ">Katrine</h4>
-                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-                </li>
-                <li class="pets__slider-item item2">
-                  <img src="./assets/images/pets-jennifer.png" alt="dog-jennifer">
-                  <h4 class="pets__item-title h4">Jennifer</h4>
-                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-                </li>
-                <li class="pets__slider-item item3">
-                  <img src="./assets/images/pets-woody.png" alt="dog-woody">
-                  <h4 class="pets__item-title h4">Woody</h4>
-                  <button class="pets__item-btn btn-secondary btn-text">Learn more</button>
-                </li>
-              </ul>
+              <ul class="pets__slider-list"></ul>
             </div>
             <div class="pets__pagination">
-              <button class="pets__slider-btn btn-prev"><img src="./assets/icons/arrow_l.png" alt="arrow_left"></button>
-              <button class="pets__slider-btn btn-next"><img src="./assets/icons/arrow_r.png"
+              <button class="btn-round btn-prev"><img src="./assets/icons/arrow_l.png" alt="arrow_left"></button>
+              <button class="btn-round btn-next"><img src="./assets/icons/arrow_r.png" alt="arrow_right"
                   alt="arrow_right"></button>
             </div>
           </div>
@@ -168,6 +152,42 @@
                 Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
                 vulputate.
                 Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="modal">
+        <div class="modal__wrapper">
+          <div class="modal__card">
+            <div class="modal__closeBtn btn-round">
+              <img src="./assets/icons/closed.svg" alt="closedModal">
+            </div>
+            <img src="./assets/images/jennifer.png" alt="" class="modal__card-img">
+            <div class="modal__content">
+              <h3 class="modal__title h3">Jennifer</h3>
+              <p class="modal__breed h4">Dog - Labrador</p>
+              <p class="modal__description h5">Jennifer is a sweet 2 months old Labrador that is patiently waiting to
+                find
+                a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate
+                to play up a storm in the house if she has all of her favorite toys.</p>
+              <ul class="modal__options-list">
+                <li class="modal__options-item">
+                  <span class="modal__options-bolt h5-bolt">Age:</span>
+                  <span class="modal__options-text h5">2 months</span>
+                </li>
+                <li class="modal__options-item">
+                  <span class="modal__options-bolt h5-bolt">Inoculations:</span>
+                  <span class="modal__options-text h5">none</span>
+                </li>
+                <li class="modal__options-item">
+                  <span class="modal__options-bolt h5-bolt">Diseases:</span>
+                  <span class="modal__options-text h5">none</span>
+                </li>
+                <li class="modal__options-item">
+                  <span class="modal__options-bolt h5-bolt">Parasites:</span>
+                  <span class="modal__options-text h5">none</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -353,9 +353,11 @@
 
 .pets__slider-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 990px;
   gap: 90px;
   width: 100%;
+  overflow: hidden;
 }
 
 .pets__pagination {
@@ -367,7 +369,7 @@
   top: 39%;
 }
 
-.pets__slider-btn {
+/* .pets__slider-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,20 +380,7 @@
   border: 2px solid var(--primary);
   border-radius: 50%;
   transition: 1s;
-}
-
-@media (hover: hover) {
-  .pets__slider-btn:hover {
-    background-color: var(--primary-light);
-    border: 2px solid var(--primary-light);
-  }
-}
-@media (hover: none) {
-  .pets__slider-btn:active {
-    background-color: var(--primary-light);
-    border: 2px solid var(--primary-light);
-  }
-}
+} */
 
 @media screen and (max-width: 1250px) {
   .pets__slider-list {
@@ -438,6 +427,9 @@
     max-width: 210px;
     top: 83%;
   }
+}
+
+@media screen and (max-width: 767px) {
 }
 
 @media screen and (max-width: 650px) {
@@ -619,7 +611,7 @@
   border-radius: 9px;
   background: var(--primary);
   position: relative;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 @media (hover: hover) {
