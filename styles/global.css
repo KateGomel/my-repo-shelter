@@ -19,6 +19,11 @@ html {
   scrollbar-gutter: stable;
 }
 
+html.stop-scroll {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
 /* Burger-menu */
 
 .header__mobile-btn {
@@ -28,7 +33,7 @@ html {
   background-color: inherit;
   border: none;
   position: relative;
-  transition: 1s;
+  transition: 0.8s;
   margin-top: 13px;
   display: none;
   z-index: 10;
@@ -73,9 +78,9 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(41, 41, 41, 0.6);
-  z-index: 1;
+  z-index: 5;
   visibility: hidden;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .burger-menu.open-menu {
@@ -108,13 +113,16 @@ html {
 }
 
 .burger-menu__list {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   transition: 0.5s;
 }
 
 .burger-menu__list-item {
-  display: inline-block;
+  display: inline;
   color: var(--dark-s);
   padding-bottom: 53px;
 }
@@ -257,7 +265,7 @@ html {
   background-color: transparent;
   border: 2px solid var(--primary);
   border-radius: 50%;
-  transition: 1s;
+  transition: all 0.3s;
 }
 
 @media (hover: hover) {
@@ -283,6 +291,7 @@ html {
   background-color: var(--light-s);
   border-radius: 9px;
   transition: 0.5s;
+  z-index: 1;
 }
 
 .pets__item-title {
@@ -330,20 +339,27 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(41, 41, 41, 0.6);
-  z-index: 1;
+  z-index: 15;
   visibility: hidden;
-  transition: 0.3s;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.modal.modal-open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__wrapper {
   margin: 0 auto;
-  padding: 80px;
 }
 
 .modal__card {
@@ -359,6 +375,7 @@ html {
   position: absolute;
   top: -52px;
   right: -41px;
+  cursor: pointer;
 }
 
 .modal__card-img {
@@ -408,6 +425,9 @@ html {
 }
 
 @media screen and (max-width: 1100px) {
+  .modal__card {
+    max-width: 750px;
+  }
   .modal__card-img {
     max-width: 400px;
   }

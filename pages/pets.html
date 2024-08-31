@@ -40,11 +40,15 @@
         <div class="burger-menu__overlay">
           <div class="burger-menu__content">
             <ul class="burger-menu__list">
-              <li class="burger-menu__list-item mobile-menu"><a href="../index.html">About the shelter</a></li>
-              <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll">Our pets</a>
+              <li class="burger-menu__list-item mobile-menu"><a href="../index.html"
+                  class="burger-menu__list-link">About the shelter</a></li>
+              <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll"
+                  class="burger-menu__list-link">Our pets</a>
               </li>
-              <li class="burger-menu__list-item mobile-menu"><a href="../index.html#help">Help the shelter</a></li>
-              <li class="burger-menu__list-item mobile-menu"><a href="#contacts">Contacts</a></li>
+              <li class="burger-menu__list-item mobile-menu"><a href="../index.html#help"
+                  class="burger-menu__list-link">Help the shelter</a></li>
+              <li class="burger-menu__list-item mobile-menu"><a href="#contacts"
+                  class="burger-menu__list-link">Contacts</a></li>
             </ul>
           </div>
         </div>
@@ -55,8 +59,8 @@
       <section class="pets">
         <div class="pets__inner container">
           <h3 class="pets__title h3">Our friends who <br> are looking for a house</h3>
-          <div class="pets__content pets__slider">
-            <ul class="pets__slider-list"></ul>
+          <div class="pets__content ">
+            <div class="pets__slider-pagination"></div>
             <div class="pets__pagination">
               <button class="btn-round btn-dbl-prev"><img src="../assets/icons/dbl_l.svg" alt="bdl_arrow_left"></button>
               <button class="btn-round btn-prev"><img src="../assets/icons/l.svg" alt="arrow_left"></button>
@@ -68,7 +72,6 @@
           </div>
         </div>
       </section>
-      <section class="modal"></section>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -107,6 +110,7 @@
         </div>
       </div>
     </footer>
+    <section class="modal"></section>
   </div>
   <script type="module" src="./pets.js"></script>
 </body>

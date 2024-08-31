@@ -322,7 +322,7 @@
   padding-bottom: 100px;
 }
 
-.pets__inner {
+.pets__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,9 +336,7 @@
   margin-bottom: 60px;
 }
 
-/* Pets-slider */
-
-.pets__slider-wrapper {
+.pets__inner {
   display: flex;
   justify-content: center;
   position: relative;
@@ -346,18 +344,29 @@
   width: 100%;
 }
 
+/* Pets-slider */
+
+.pets__slider-wrapper {
+  margin: 0 auto;
+  max-width: 1010px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .pets__slider {
+  position: relative;
+  left: -1030px;
   margin-bottom: 57px;
-  padding: 0 105px;
+  display: flex;
+  width: 100%;
 }
 
 .pets__slider-list {
   display: flex;
-  justify-content: space-between;
-  max-width: 990px;
+  justify-content: center;
   gap: 90px;
   width: 100%;
-  overflow: hidden;
+  margin: 0 20px;
 }
 
 .pets__pagination {
@@ -369,49 +378,150 @@
   top: 39%;
 }
 
-/* .pets__slider-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 52px;
-  height: 52px;
-  color: var(--dark-3xl);
-  background-color: transparent;
-  border: 2px solid var(--primary);
-  border-radius: 50%;
-  transition: 1s;
-} */
+/* Animation slider */
+@keyframes toLeft {
+  from {
+    left: -1030px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.to-left {
+  animation: toLeft 2s;
+}
+
+@keyframes toRight {
+  from {
+    left: -1030px;
+  }
+  to {
+    left: -2060px;
+  }
+}
+
+.to-right {
+  animation: toRight 2s;
+}
+/*  */
 
 @media screen and (max-width: 1250px) {
-  .pets__slider-list {
-    gap: 60px;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .pets__slider {
-    padding: 0 80px;
-  }
-  .pets__slider-list {
-    gap: 30px;
-  }
-}
-
-@media screen and (max-width: 1120px) {
   .pets__slider-wrapper {
-    max-width: 840px;
+    max-width: 930px;
+  }
+  .pets__slider {
+    left: -930px;
   }
   .pets__slider-list {
     gap: 40px;
   }
-  .item3 {
+
+  @keyframes toLeft {
+    from {
+      left: -930px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .to-left {
+    animation: toLeft 2s;
+  }
+
+  @keyframes toRight {
+    from {
+      left: -930px;
+    }
+    to {
+      left: -1860px;
+    }
+  }
+
+  .to-right {
+    animation: toRight 2s;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  [data-item="2"] {
     display: none;
+  }
+  .pets__slider-wrapper {
+    max-width: 620px;
+  }
+
+  .pets__slider {
+    left: -620px;
+  }
+
+  .pets__pagination {
+    max-width: 800px;
+  }
+
+  @keyframes toLeft {
+    from {
+      left: -620px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .to-left {
+    animation: toLeft 2s;
+  }
+
+  @keyframes toRight {
+    from {
+      left: -620px;
+    }
+    to {
+      left: -1240px;
+    }
+  }
+
+  .to-right {
+    animation: toRight 2s;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  .pets__slider-wrapper {
+    max-width: 600px;
+  }
   .pets__slider {
-    padding: 0 64px;
+    left: -600px;
+  }
+  .pets__slider-list {
+    gap: 20px;
+  }
+
+  @keyframes toLeft {
+    from {
+      left: -600px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .to-left {
+    animation: toLeft 2s;
+  }
+
+  @keyframes toRight {
+    from {
+      left: -600px;
+    }
+    to {
+      left: -1200px;
+    }
+  }
+
+  .to-right {
+    animation: toRight 2s;
   }
 }
 
@@ -429,7 +539,46 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 680px) {
+  .pets__slider-wrapper {
+    max-width: 310px;
+  }
+  .pets__slider {
+    left: -310px;
+  }
+  .pets__slider-list {
+    gap: 0;
+  }
+
+  [data-item="1"] {
+    display: none;
+  }
+
+  @keyframes toLeft {
+    from {
+      left: -310px;
+    }
+    to {
+      left: -0px;
+    }
+  }
+
+  .to-left {
+    animation: toLeft 1s;
+  }
+
+  @keyframes toRight {
+    from {
+      left: -310px;
+    }
+    to {
+      left: -620px;
+    }
+  }
+
+  .to-right {
+    animation: toRight 1s;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -441,12 +590,6 @@
     font-size: 30px;
     margin-bottom: 43px;
   }
-  .pets__slider-list {
-    gap: 0px;
-  }
-  .item2 {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -457,6 +600,12 @@
   }
   .pets__pagination {
     max-width: 183px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .pets__slider-list {
+    margin: 15px;
   }
 }
 

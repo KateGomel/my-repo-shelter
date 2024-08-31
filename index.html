@@ -39,12 +39,16 @@
       <div class="burger-menu">
         <div class="burger-menu__content">
           <ul class="burger-menu__list">
-            <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll">About the
+            <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll"
+                class="burger-menu__list-link">About the
                 shelter</a>
             </li>
-            <li class="burger-menu__list-item mobile-menu"><a href="./pages/pets.html">Our pets</a></li>
-            <li class="burger-menu__list-item mobile-menu"><a href="#help">Help the shelter</a></li>
-            <li class="burger-menu__list-item mobile-menu"><a href="#contacts">Contacts</a></li>
+            <li class="burger-menu__list-item mobile-menu"><a href="./pages/pets.html"
+                class="burger-menu__list-link">Our pets</a></li>
+            <li class="burger-menu__list-item mobile-menu"><a href="#help" class="burger-menu__list-link">Help the
+                shelter</a></li>
+            <li class="burger-menu__list-item mobile-menu"><a href="#contacts"
+                class="burger-menu__list-link">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -80,16 +84,16 @@
       </section>
       <!-- Pets -->
       <section id="pets" class="pets">
-        <div class="pets__inner container">
+        <div class="pets__wrapper container">
           <h3 class="pets__title h3">Our friends who <br> are looking for a house</h3>
-          <div class="pets__slider-wrapper">
-            <div class="pets__slider">
-              <ul class="pets__slider-list"></ul>
+          <div class="pets__inner">
+            <div class="pets__slider-wrapper">
+              <div class="pets__slider">
+              </div>
             </div>
             <div class="pets__pagination">
               <button class="btn-round btn-prev"><img src="./assets/icons/arrow_l.png" alt="arrow_left"></button>
-              <button class="btn-round btn-next"><img src="./assets/icons/arrow_r.png" alt="arrow_right"
-                  alt="arrow_right"></button>
+              <button class="btn-round btn-next"><img src="./assets/icons/arrow_r.png" alt="arrow_right"></button>
             </div>
           </div>
           <a href="./pages/pets.html" class="pets__btn btn-primary btn-text">Get to know the rest</a>
@@ -156,42 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="modal">
-        <div class="modal__wrapper">
-          <div class="modal__card">
-            <div class="modal__closeBtn btn-round">
-              <img src="./assets/icons/closed.svg" alt="closedModal">
-            </div>
-            <img src="./assets/images/jennifer.png" alt="" class="modal__card-img">
-            <div class="modal__content">
-              <h3 class="modal__title h3">Jennifer</h3>
-              <p class="modal__breed h4">Dog - Labrador</p>
-              <p class="modal__description h5">Jennifer is a sweet 2 months old Labrador that is patiently waiting to
-                find
-                a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate
-                to play up a storm in the house if she has all of her favorite toys.</p>
-              <ul class="modal__options-list">
-                <li class="modal__options-item">
-                  <span class="modal__options-bolt h5-bolt">Age:</span>
-                  <span class="modal__options-text h5">2 months</span>
-                </li>
-                <li class="modal__options-item">
-                  <span class="modal__options-bolt h5-bolt">Inoculations:</span>
-                  <span class="modal__options-text h5">none</span>
-                </li>
-                <li class="modal__options-item">
-                  <span class="modal__options-bolt h5-bolt">Diseases:</span>
-                  <span class="modal__options-text h5">none</span>
-                </li>
-                <li class="modal__options-item">
-                  <span class="modal__options-bolt h5-bolt">Parasites:</span>
-                  <span class="modal__options-text h5">none</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -230,6 +199,7 @@
         </div>
       </div>
     </footer>
+    <section class="modal"></section>
   </div>
   <script type="module" src="./index.js"></script>
 </body>
