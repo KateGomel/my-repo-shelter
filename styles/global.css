@@ -230,6 +230,7 @@ html.stop-scroll {
   background-color: var(--primary);
   color: var(--dark-3xl);
   transition: 0.8s;
+  min-width: 209px;
 }
 
 @media (hover: hover) {
@@ -264,6 +265,8 @@ html.stop-scroll {
   color: var(--dark-3xl);
   background-color: transparent;
   border: 2px solid var(--primary);
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   transition: all 0.3s;
 }
