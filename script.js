@@ -1,1 +1,0 @@
-console.log("Cozy House Main");

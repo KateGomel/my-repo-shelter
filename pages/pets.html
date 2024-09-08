@@ -10,8 +10,109 @@
 </head>
 
 <body>
-  <p>hhhf</p>
-  <script src="./pets.js"></script>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__logo">
+          <a href="../index.html">
+            <h1 class="header__title title">Cozy House</h1>
+            <p class="header__subtitle subtitle">Shelter for pets in Boston</p>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item p-l "><a href="../index.html">About the shelter</a></li>
+            <li class="header__list-item p-l header__item-active"><a href="#no_scroll">Our pets</a></li>
+            <li class="header__list-item p-l"><a href="../index.html#help">Help the shelter</a></li>
+            <li class="header__list-item p-l"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="header__mobile-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Burger-menu -->
+      <div class="burger-menu">
+        <div class="burger-menu__overlay">
+          <div class="burger-menu__content">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item mobile-menu"><a href="../index.html"
+                  class="burger-menu__list-link">About the shelter</a></li>
+              <li class="burger-menu__list-item mobile-menu burger-menu__item-active"><a href="#no_scroll"
+                  class="burger-menu__list-link">Our pets</a>
+              </li>
+              <li class="burger-menu__list-item mobile-menu"><a href="../index.html#help"
+                  class="burger-menu__list-link">Help the shelter</a></li>
+              <li class="burger-menu__list-item mobile-menu"><a href="#contacts"
+                  class="burger-menu__list-link">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <section class="pets">
+        <div class="pets__inner container">
+          <h3 class="pets__title h3">Our friends who <br> are looking for a house</h3>
+          <div class="pets__content ">
+            <div class="pets__pagination"></div>
+            <div class="pets__btn-pagination">
+              <button class="btn-round btn-dbl-prev disable" disabled></button>
+              <button class="btn-round btn-prev disable" disabled></button>
+              <p class="pets__current-page h4">1</p>
+              <button class="btn-round btn-next"></button>
+              <button class="btn-round btn-dbl-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div id="contacts" class="footer__content">
+          <div class="footer__contacts">
+            <h3 class="footer__title-contacts h3">
+              For questions and suggestions
+            </h3>
+            <a href="mailto:email@shelter.com" class="footer__email h4">
+              <span>
+                email@shelter.com
+              </span>
+            </a>
+            <a href="tel:+136745677554" class="footer__phone h4">
+              <span>
+                +13 674 567 75 54
+              </span>
+            </a>
+          </div>
+          <div class="footer__location">
+            <h3 class="footer__title-location h3">
+              We are waiting for your visit
+            </h3>
+            <a href="https://maps.app.goo.gl/sWkBt9H88Xcw9Chc9" target="_blank" class="footer__boston h4">
+              <span>
+                1 Central Street, Boston (entrance from the store)
+              </span>
+            </a>
+            <a href="https://maps.app.goo.gl/QVXctT4dXUybfLHD7" target="_blank" class="footer__london h4">
+              <span>
+                18 South Park, London
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="modal"></section>
+    <script type="module" src="./pets.js"></script>
+  </div>
+
 </body>
 
 </html>
